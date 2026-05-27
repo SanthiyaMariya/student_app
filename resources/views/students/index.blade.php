@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create Student</title>
+    <title>Create master</title>
 
     <style>
         *{
