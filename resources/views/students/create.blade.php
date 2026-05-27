@@ -9,5 +9,5 @@
 
     <input type="text" name="course" placeholder="Course"><br><br>
 
-    <button type="submit">Save</button>
+    <button type="submit">cancel</button>
 </form>
