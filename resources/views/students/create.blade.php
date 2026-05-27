@@ -9,5 +9,8 @@
 
     <input type="text" name="course" placeholder="Course"><br><br>
 
+    <input type="text" name="moblie no" placeholder="Mobile No"><br><br>
+
+
     <button type="submit">Save</button>
 </form>
