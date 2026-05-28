@@ -108,6 +108,30 @@
         </form>
 
     </div>
+<h1>All Teachers</h1>
+<a href="{{ route('teachers.create') }}">Add New Teacher</a>
+<br><br>
+<a href="{{ route('students.index') }}">Go back to Students</a>
 
+<table border="1">
+    <tr>
+        <th>Name</th> <th>Email</th> <th>Subject</th> <th>Actions</th>
+    </tr>
+    @foreach ($teachers as $teacher)
+    <tr>
+        <td>{{ $teacher->name }}</td>
+        <td>{{ $teacher->email }}</td>
+        <td>{{ $teacher->subject }}</td>
+        <td>
+            <a href="{{ route('teachers.edit', $teacher->id) }}">Edit</a>
+            <form action="{{ route('teachers.destroy', $teacher->id) }}" method="POST" style="display:inline;">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    @endforeach
+</table>
 </body>
 </html>
